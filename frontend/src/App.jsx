@@ -1,7 +1,13 @@
+import ListOfTodos from './containers/listOfTodos/ListOfTodos'
+
 import './styles/App.css'
 
 function App() {
-	return <h1>Hola</h1>
+	return (
+		<>
+			<ListOfTodos />
+		</>
+	)
 }
 
 export default App
