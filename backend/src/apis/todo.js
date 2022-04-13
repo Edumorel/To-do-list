@@ -1,4 +1,4 @@
-const todoList = [
+let todoList = [
 	//new Date().getTime().toString(36)
 	{
 		id: 'l1uxw1zg',
