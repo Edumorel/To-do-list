@@ -1,4 +1,7 @@
 body {
-	background-color: #3d3d3d;
-	color: #f1f1f1;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: #dfdfdf;
+	color: #202020;
 }

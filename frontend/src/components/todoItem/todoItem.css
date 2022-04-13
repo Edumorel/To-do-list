@@ -1,14 +1,15 @@
 .todo_item {
 	height: 140px;
 	padding: 15px 25px;
-	margin: 10px;
+	margin: 0 10px;
 	cursor: pointer;
 	position: relative;
 	transition: background 0.4s ease;
+	border-bottom: 1px solid #0003;
 }
 
 .todo_item:hover {
-	background-color: #fff2;
+	background-color: #f3f3f3;
 }
 
 .todo_item_name {
@@ -33,13 +34,13 @@
 	right: 25px;
 	top: 10px;
 	cursor: pointer;
-	color: #fff;
+	color: #222;
 	font-size: 20px;
 	display: none;
 }
 
 .todo_item_delete:hover {
-	color: #aaa;
+	color: #555;
 }
 
 .todo_item:hover .todo_item_delete {

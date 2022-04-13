@@ -1,5 +1,7 @@
 import TodoItem from '../../components/todoItem/TodoItem'
 
+import './listOfTodos.css'
+
 const ListOfTodos = ({ todos = [] }) => {
 	return (
 		<div className='list_of_todos'>

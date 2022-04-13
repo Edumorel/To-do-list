@@ -1,23 +1,26 @@
 import postTodos from '../../services/psotTodos'
 
+import './addTodo.css'
+
 const AddTodo = ({ setTodos, todos }) => {
 	const handleSubmit = (e) => {
 		e.preventDefault()
 
 		const name = document.querySelector('.add_todos_input').value
+		const description = ''
 		const id = new Date().getTime().toString(36)
 
 		setTodos([
 			...todos,
 			{
 				name: name,
-				description: '',
+				description: description,
 				id: id,
 				state: 'todo',
 			},
 		])
 
-		postTodos(name, '')
+		postTodos(name, description)
 
 		document.querySelector('.add_todos_input').value = ''
 	}
@@ -27,9 +30,15 @@ const AddTodo = ({ setTodos, todos }) => {
 			<input
 				type='text'
 				className='add_todos_input'
-				placeholder='Añade algo'
+				id='add_todos_name'
+				placeholder='Añade un nombre'
 				required
 			/>
+			<textarea
+				placeholder='Añadele una description'
+				className='add_todos_input'
+				id='add_todos_description'
+			></textarea>
 			<button type='submit' className='add_todos_button'>
 				Añadir
 			</button>

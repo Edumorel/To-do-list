@@ -1,0 +1,12 @@
+.list_of_todos {
+	width: 98%;
+	margin: 10px auto 0 auto;
+	background-color: #fff;
+	min-height: calc(100vh - 310px);
+	box-sizing: border-box;
+	border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
+	box-shadow: 5px -5px 20px #0002;
+	overflow: hidden;
+	padding: 35px 0 0 0;
+}

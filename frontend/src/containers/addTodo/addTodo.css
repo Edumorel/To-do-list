@@ -1,0 +1,40 @@
+.add_todos {
+	width: 95%;
+	margin: 20px auto 0 auto;
+	height: 280px;
+}
+
+.add_todos_input {
+	display: block;
+	width: 100%;
+	outline: none;
+	margin: 0 0 20px 0;
+	padding: 10px;
+	border-radius: 10px;
+	border: none;
+	box-shadow: 1px 1px 10px #0002;
+}
+
+#add_todos_description {
+	resize: vertical;
+	min-height: 100px;
+	max-height: 120px;
+}
+
+.add_todos_button {
+	width: 100%;
+	outline: none;
+	color: #fff;
+	background-color: rgb(3, 0, 192);
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+	transition: background 0.3s ease-out;
+	font-size: 17px;
+	font-weight: 500;
+	border-radius: 25px;
+}
+
+.add_todos_button:hover {
+	background-color: rgb(5, 2, 153);
+}
