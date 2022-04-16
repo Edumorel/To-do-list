@@ -35,6 +35,12 @@ app.post('/api/list/add', (req, res) => {
 	res.json(todoList)
 })
 
+app.delete('/api/list/delete', (req, res) => {
+	const { index } = req.body
+
+	todoList.splice(index, 1)
+})
+
 //START SERVER
 app.listen(PORT, () => {
 	console.log('Server on port', PORT)

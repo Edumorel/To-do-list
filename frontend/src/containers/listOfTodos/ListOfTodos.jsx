@@ -2,7 +2,7 @@ import TodoItem from '../../components/todoItem/TodoItem'
 
 import './listOfTodos.css'
 
-const ListOfTodos = ({ todos = [] }) => {
+const ListOfTodos = ({ todos = [], setTodos }) => {
 	return (
 		<div className='list_of_todos'>
 			{todos.map((todo) => (
@@ -10,6 +10,9 @@ const ListOfTodos = ({ todos = [] }) => {
 					key={todo.id}
 					name={todo.name}
 					description={todo.description}
+					id={todo.id}
+					todos={todos}
+					setTodos={setTodos}
 				/>
 			))}
 		</div>

@@ -6,23 +6,24 @@ const AddTodo = ({ setTodos, todos }) => {
 	const handleSubmit = (e) => {
 		e.preventDefault()
 
-		const name = document.querySelector('.add_todos_input').value
-		const description = ''
+		const name = document.querySelector('#add_todos_name')
+		const description = document.querySelector('#add_todos_description')
 		const id = new Date().getTime().toString(36)
 
 		setTodos([
 			...todos,
 			{
-				name: name,
-				description: description,
+				name: name.value,
+				description: description.value,
 				id: id,
 				state: 'todo',
 			},
 		])
 
-		postTodos(name, description)
+		postTodos(name.value, description.value)
 
-		document.querySelector('.add_todos_input').value = ''
+		name.value = ''
+		description.value = ''
 	}
 
 	return (

@@ -24,7 +24,7 @@ function App() {
 		<>
 			<AddTodo setTodos={setTodos} todos={todos} />
 
-			{state == 'load' && <ListOfTodos todos={todos} />}
+			{state == 'load' && <ListOfTodos todos={todos} setTodos={setTodos} />}
 		</>
 	)
 }
